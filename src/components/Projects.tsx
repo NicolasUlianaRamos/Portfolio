@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import facilitaImg from '@/assets/facilitaServico.png';
 import getapetImg from '@/assets/getapet.png';
 import medicalImg from '@/assets/medicalservice.png';
+import nillyTrack from '@/assets/nillytrack.png';
 
 interface CustomProject {
   id: string;
@@ -40,6 +41,14 @@ const Projects = () => {
       image: medicalImg,
       url: 'https://medical-service-red.vercel.app/',
       tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT']
+    },
+    {
+      id: 'nilly-track',
+      name: 'NillyTrack',
+      description: 'Sistema para avaliação de livros',
+      image: nillyTrack,
+      url: 'https://nillytrack.online',
+      tech: ['React', 'Node.js', 'Express', 'Typescript', 'MongoDB', 'JWT']
     }
   ];
 
