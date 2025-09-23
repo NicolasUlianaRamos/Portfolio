@@ -29,6 +29,22 @@ const Experiences = () => {
         'Ganho de experiência em ambiente profissional supervisionado',
         'Contribuição para projeto de longa duração (6+ meses)'
       ]
+    },
+    {
+      id: 'nillytrack',
+      company: 'NillyTrack',
+      position: 'Desenvolvedor Full Stack (Projeto Pessoal)',
+      period: '2025 (2 meses)',
+      location: 'Remoto',
+      description: 'Projeto pessoal completo para avaliação de livros, com autenticação, cadastro e gerenciamento de avaliações, busca e filtragem.',
+      technologies: ['React', 'Node.js', 'Express', 'TypeScript', 'MongoDB', 'JWT'],
+      highlights: [
+        'Arquitetura full stack com API REST em Node.js/Express e frontend em React',
+        'Autenticação e autorização com JWT e proteção de rotas',
+        'CRUD completo de livros e avaliações com validações',
+        'Modelagem e persistência de dados no MongoDB',
+        'Design responsivo e boas práticas de UX'
+      ]
     }
   ];
 
