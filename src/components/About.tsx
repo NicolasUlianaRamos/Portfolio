@@ -3,7 +3,7 @@ import { Code, Database, Globe, Smartphone } from 'lucide-react';
 const About = () => {
   const skills = [
     'HTML', 'CSS', 'JavaScript', 'TypeScript', 'React.js', 'Next.js', 
-    'React Native', 'Node.js', 'Express.js', 'MongoDB', 'MySQL', 
+    'React Native', 'Flutter', 'Node.js', 'Express.js', 'PHP', 'MongoDB', 'MySQL', 'PHP', 'PostgreSQL',
     'Java', 'C#', 'ASP.NET', 'Bootstrap', 'Tailwind CSS', 'Sequelize'
   ];
 
@@ -16,17 +16,17 @@ const About = () => {
     {
       icon: Code,
       title: 'Backend',
-      skills: ['Node.js', 'Express.js', 'ASP.NET', 'C#', 'Java']
+      skills: ['Node.js', 'Express.js', 'ASP.NET', 'C#', 'Java', 'PHP']
     },
     {
       icon: Database,
       title: 'Banco de Dados',
-      skills: ['MongoDB', 'MySQL', 'Sequelize']
+      skills: ['MongoDB', 'MySQL', 'Sequelize', 'PostgreSQL']
     },
     {
       icon: Smartphone,
       title: 'Mobile',
-      skills: ['React Native']
+      skills: ['React Native', 'Flutter']
     }
   ];
 

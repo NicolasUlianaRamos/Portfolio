@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import profileImage from '@/assets/profile-image.jpeg';
-import cvFile from '@/assets/Currículo - Nicolas Uliana Ramos.pdf';
+import cvFile from '@/assets/Currículo Nicolas Uliana Ramos.pdf';
 
 const Hero = () => {
   const scrollToContact = () => {
