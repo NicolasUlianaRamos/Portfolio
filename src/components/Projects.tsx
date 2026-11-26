@@ -4,6 +4,7 @@ import facilitaImg from '@/assets/facilitaServico.png';
 import getapetImg from '@/assets/getapet.png';
 import medicalImg from '@/assets/medicalservice.png';
 import nillyTrack from '@/assets/nillytrack.png';
+import gastroGourmetImg from '@/assets/gastrogourmet.png';
 
 interface CustomProject {
   id: string;
@@ -16,8 +17,15 @@ interface CustomProject {
 
 
 const Projects = () => {
-  // Substitua as imagens abaixo pelas imagens reais dos projetos, se desejar
   const customProjects: CustomProject[] = [
+    {
+      id: 'gastro-gourmet',
+      name: 'Gastro Gourmet',
+      description: 'Plataforma de gestão de delivery para restaurantes que reúne cardápio, pedidos pelo WhatsApp, clientes, despesas e automação do atendimento em um painel.',
+      image: gastroGourmetImg,
+      url: 'https://gastrogourmet.com.br/',
+      tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'JWT']
+    },
     {
       id: 'facilita-servicos',
       name: 'Facilita Serviços',
@@ -73,8 +81,8 @@ const Projects = () => {
             {customProjects.map((project) => (
               <div key={project.id} className="card-portfolio p-6 group flex flex-col h-full">
                 <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
