@@ -5,7 +5,7 @@ interface Experience {
   company: string;
   position: string;
   period: string;
-  location: string;
+  location?: string;
   description: string;
   technologies: string[];
   highlights: string[];
@@ -14,12 +14,25 @@ interface Experience {
 const Experiences = () => {
   const experiences: Experience[] = [
     {
+      id: 'serpro',
+      company: 'SERPRO',
+      position: 'Estagiário em Desenvolvimento de Software',
+      period: 'Mai 2026 - Atual',
+      description: 'Desenvolvimento e manutenção de sistemas corporativos, com foco em backend.',
+      technologies: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Docker', 'Git'],
+      highlights: [
+        'Desenvolvimento de APIs utilizando Node.js, TypeScript e Express',
+        'Utilização de PostgreSQL, Docker e Git no desenvolvimento de software',
+        'Colaboração em equipe no desenvolvimento e evolução de sistemas'
+      ]
+    },
+    {
       id: 'way-anima-hub',
       company: 'Way Anima Hub',
       position: 'Desenvolvedor Front-end',
-      period: 'Ago 2025 - Atual',
+      period: 'Jul 2025 - Dez 2025',
       location: 'Remoto',
-      description: 'Participação em projeto acadêmico de desenvolvimento web voltado para horas extracurriculares e ganho de experiência prática. Trabalhando com tecnologias modernas em um ambiente de aprendizado supervisionado.',
+      description: 'Participação em projeto acadêmico de desenvolvimento web voltado para horas extracurriculares e ganho de experiência prática. Trabalhou com tecnologias modernas em um ambiente de aprendizado supervisionado.',
       technologies: ['Vue.js', 'JavaScript', 'HTML5', 'CSS3', 'Git'],
       highlights: [
         'Desenvolvimento de interfaces utilizando Vue.js',
@@ -27,7 +40,7 @@ const Experiences = () => {
         'Colaboração em equipe de desenvolvimento',
         'Implementação de layouts responsivos para diferentes dispositivos',
         'Ganho de experiência em ambiente profissional supervisionado',
-        'Contribuição para projeto de longa duração (6+ meses)'
+        'Contribuição para a evolução da plataforma WayHub'
       ]
     },
     {
@@ -103,10 +116,10 @@ const Experiences = () => {
                             <Calendar className="h-4 w-4 mr-2" />
                             <span className="text-sm font-medium">{experience.period}</span>
                           </div>
-                          <div className="flex items-center text-muted-foreground">
+                          {experience.location && <div className="flex items-center text-muted-foreground">
                             <MapPin className="h-4 w-4 mr-2" />
                             <span className="text-sm">{experience.location}</span>
-                          </div>
+                          </div>}
                         </div>
                       </div>
                       
